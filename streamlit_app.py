@@ -21,4 +21,4 @@ if (fruit_selected.size == 0) :
 else :
   fruit_to_show = my_fruit_list.loc[fruit_selected]
   
- streamlit.dataframe(fruit_to_show)
+streamlit.dataframe(fruit_to_show)
