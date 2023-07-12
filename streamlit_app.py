@@ -16,7 +16,7 @@ fruit_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.i
 
 # Display the table on the page.
 
-if (fruit_selected.size == 0) :
+if (len(fruit_selected) == 0) :
   fruit_to_show = my_fruit_list
 else :
   fruit_to_show = my_fruit_list.loc[fruit_selected]
