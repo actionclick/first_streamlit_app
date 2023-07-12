@@ -18,7 +18,7 @@ fruit_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.i
 
 if (fruit_selected.size == 0) :
   fruit_to_show = my_fruit_list
-else
+else :
   fruit_to_show = my_fruit_list.loc[fruit_selected]
   
  streamlit.dataframe(fruit_to_show)
